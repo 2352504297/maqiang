@@ -1,0 +1,35 @@
+@import '~rc-easyui/dist/themes/default/easyui.css';
+@import '~rc-easyui/dist/themes/icon.css';
+@import '~rc-easyui/dist/themes/react.css';
+.condition {
+    margin: 5px 0 0 0 ;
+    padding: 0px 0px 0px 15px;
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    background: #689bd7;
+    border-radius: 2px;
+    width: 100%;
+}
+.condition .condition-left{
+    float: left;
+} 
+.condition .condition-right{
+    float: right;
+} 
+.nav-list-if .textbox-label-top{
+display: inline-block;
+margin-right: 5px;
+}
+.nav-list-if .nav-list-if-list{
+    margin-top: 10px;
+}
+.nav-list-if-list .nav-list-if-list-div{
+    width: 33%;
+    float: left;
+    
+}
+.combobox-item.combobox-item-selected{
+    background-color: #0f519c;
+    color: white;
+}
