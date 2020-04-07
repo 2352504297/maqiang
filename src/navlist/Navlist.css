@@ -3,7 +3,6 @@
 @import '~rc-easyui/dist/themes/react.css';
 .condition {
     margin: 5px 0 0 0 ;
-    padding: 0px 0px 0px 15px;
     display: block;
     height: 40px;
     line-height: 40px;
@@ -13,10 +12,24 @@
 }
 .condition .condition-left{
     float: left;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 15px;
 } 
 .condition .condition-right{
     float: right;
+    margin-right: 20px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 } 
+.condition .condition-right .f-field.textbox{
+    margin-right: 5px;
+}
+
 .nav-list-if .textbox-label-top{
 display: inline-block;
 margin-right: 5px;
@@ -32,4 +45,29 @@ margin-right: 5px;
 .combobox-item.combobox-item-selected{
     background-color: #0f519c;
     color: white;
+}
+ .datagrid-header .datagrid-header-row td,  .datagrid-body .datagrid-row td,  .datagrid-footer .datagrid-header-row td{
+border: none;
+}
+.f-column .panel-body.panel-body-noheader{
+border: none;
+background: none;
+}
+.f-column .datagrid-header.f-row.f-noshrink{
+    border: none;
+background: none;
+}
+.f-column .datagrid-header .datagrid-header.f-noshrink{
+    border: none;
+    background: none;
+}
+.data-name{
+    color: #333;
+    /* background-color: #0f519c; */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
 }
