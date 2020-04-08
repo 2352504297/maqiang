@@ -71,3 +71,6 @@ background: none;
     padding: 0;
     margin: 0;
 }
+.datagrid-btable .datagrid-row{
+    height: 60px;
+}

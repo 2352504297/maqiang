@@ -62,6 +62,7 @@ class NavMenuChild extends React.Component {
       ]
     }
     this.onChanges = this.onChanges.bind(this);
+    this.seatchList = this.seatchList.bind(this);
   }
   handlePageChange(event) {
     this.loadPage(event.pageNumber, event.pageSize)
@@ -153,7 +154,7 @@ class NavMenuChild extends React.Component {
           <div className="condition-right">
             <TextBox inputId="t1" placeholder="请输入关键字" name="fname" value={this.state.listSECAH} ></TextBox>
             <ButtonGroup selectionMode="multiple">
-              <LinkButton >搜 索</LinkButton>
+              <LinkButton onClick={this.seatchList}>搜 索</LinkButton>
             </ButtonGroup>
           </div>
           <div style={{ clear: "both" }}></div>
@@ -177,6 +178,7 @@ class NavMenuChild extends React.Component {
       </div>
     )
   }
+  // https://wsbs.yayb.com.cn/onlineController/news_online
   onChanges = (id, valuees) => {
     console.log(id);
     let values = valuees.name;
@@ -201,6 +203,24 @@ class NavMenuChild extends React.Component {
         this.setState({ name2: values });
       }
     }
+  }
+  seatchList(){
+    console.log("1111111111111111111")
+    fetch("").then(response => {
+            // var rtodayN 
+            console.log(response+"结果"+response.text()+"54535435435"+response.addAttribute)
+
+            response.then(res => {
+              response = res;
+                console.log(response)
+                console.log("2222222222222")
+                // this.setState({ rtodayN })
+                // console.log(this.state)
+            })
+
+
+        })
+
   }
 }
 
